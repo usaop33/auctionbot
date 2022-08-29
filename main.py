@@ -22,7 +22,7 @@ post_channel = POST_CHANNEL
 log_channel = int(log_channel)
 post_channel = int(post_channel)
 
-client = TelegramClient('konek', api_id, api_hash).start(bot_token=bot_token) #i dont really understand it lol but without this bot wont work
+client = TelegramClient('konekgub', api_id, api_hash).start(bot_token=bot_token) #i dont really understand it lol but without this bot wont work
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s', #copy pasted from telethon docs lol..... so usually it logs error
                     level=logging.WARNING)
