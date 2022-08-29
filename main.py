@@ -259,8 +259,8 @@ async def legendarycb(event):
 
 @client.on(events.CallbackQuery(data='submit'))
 async def submitcb(event):
-    await client.edit_message(event.sender_id, event.message_id, user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['text']+"\n\nSUBMITED\nCheck @pendingauctionpokemon to see status of your pokemon", buttons=Button.clear())
-    await client.send_file(log_channel, user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['image'], caption = user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['text']
+    await client.edit_message(event.sender_id, event.message_id, user_cache[event.sender_id]['name'][user_cache[event.sender_id]['ligma']]['text']+"\n\nSUBMITED\nCheck @pendingauctionpokemon to see status of your pokemon", buttons=Button.clear())
+    await client.send_file(log_channel, user_cache[event.sender_id]['name'][user_cache[event.sender_id]['ligma']]['image'], caption = user_cache[event.sender_id]['name'][user_cache[event.sender_id]['ligma']]['text']
         ,
         buttons=[
         [
@@ -288,9 +288,9 @@ async def approvecb(event):
     user_id = event.sender_id
     if user_id in xmods:
         sender = await event.get_sender()
-        await client.edit_message(log_channel, event.message_id, user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['text']+"\n\nApproved", buttons=Button.clear())
-        await client.send_file(post_channel, user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['image'], caption = user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['text'])
-        await client.send_file(user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['ID'], user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['image'], caption = user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['text']+"\n\nApproved by")
+        await client.edit_message(log_channel, event.message_id, user_cache[event.sender_id]['name'][user_cache[event.sender_id]['ligma']]['text']+"\n\nApproved", buttons=Button.clear())
+        await client.send_file(post_channel, user_cache[event.sender_id]['name'][user_cache[event.sender_id]['ligma']]['image'], caption = user_cache[event.sender_id]['name'][user_cache[event.sender_id]['ligma']]['text'])
+        await client.send_file(user_cache[event.sender_id]['name'][user_cache[event.sender_id]['ligma']]['ID'], user_cache[event.sender_id]['name'][user_cache[event.sender_id]['ligma']]['image'], caption = user_cache[event.sender_id]['name'][user_cache[event.sender_id]['ligma']]['text']+"\n\nApproved by")
     else:
         await event.answer('You are not the auctioneer', alert=True)
 
