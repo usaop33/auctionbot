@@ -182,8 +182,10 @@ async def legendarycb(event):
                     lol = respo.text
                     huh = respo.media
                     user_cache[user_id] = {}
-                    user_cache[user_id]['ID'] = user_id
-                    user_cache[user_id]['image'] = huh
+                    user_cache[user_id]['ligma'] = name
+                    user_cache[user_id]['name'] = {user_cache[user_id]['ligma'] : {}}
+                    user_cache[user_id]['name'][user_cache[user_id]['ligma']]['ID'] = user_id
+                    user_cache[user_id]['name'][user_cache[user_id]['ligma']]['image'] = huh
                     await conv.send_message('Forward moveset pic of pokemon')
                     x = await conv.get_response(timeout = 90000)
                     if x.media:
@@ -192,7 +194,7 @@ async def legendarycb(event):
                         bbb = await conv.get_response(timeout = 90000)
                         ccc = bbb.text
                         hmm = "#Legendary\nUser id - "+sheesh+"\nUsername : @"+sender.username+"\n\nAbout Pokemon:- \n"+name+"\n\nEvs and Ivs:-\n"+lol+"\n\nMoveset:- \n"+lmao+"\n\nBase - "+ccc
-                        user_cache[user_id]['text'] = hmm
+                        user_cache[user_id]['name'][user_cache[user_id]['ligma']]['text'] = hmm
                         await client.send_file(event.sender_id, file = huh, caption = hmm
                             ,
                             buttons=[
@@ -222,8 +224,10 @@ async def legendarycb(event):
                     lol = respo.text
                     huh = respo.media
                     user_cache[user_id] = {}
-                    user_cache[user_id]['ID'] = user_id
-                    user_cache[user_id]['image'] = huh
+                    user_cache[user_id]['ligma'] = name
+                    user_cache[user_id]['name'] = {user_cache[user_id]['ligma'] : {}}
+                    user_cache[user_id]['name'][user_cache[user_id]['ligma']]['ID'] = user_id
+                    user_cache[user_id]['name'][user_cache[user_id]['ligma']]['image'] = huh
                     await conv.send_message('Forward moveset pic of pokemon')
                     x = await conv.get_response(timeout = 90000)
                     if x.media:
@@ -232,7 +236,7 @@ async def legendarycb(event):
                         bbb = await conv.get_response(timeout = 90000)
                         ccc = bbb.text
                         hmm = "#Legendary\nUser id - "+sheesh+"\n\nAbout Pokemon:- \n"+name+"\n\nEvs and Ivs:-\n"+lol+"\n\nMoveset:- \n"+lmao+"\n\nBase - "+ccc
-                        user_cache[user_id]['text'] = hmm
+                        user_cache[user_id]['name'][user_cache[user_id]['ligma']]['text'] = hmm
                         await client.send_file(event.sender_id, file = huh, caption = hmm
                             ,
                             buttons=[
@@ -255,8 +259,8 @@ async def legendarycb(event):
 
 @client.on(events.CallbackQuery(data='submit'))
 async def submitcb(event):
-    await client.edit_message(event.sender_id, event.message_id, user_cache[event.sender_id]['text']+"\n\nSUBMITED\nCheck @pendingauctionpokemon to see status of your pokemon", buttons=Button.clear())
-    await client.send_file(log_channel, user_cache[event.sender_id]['image'], caption = user_cache[event.sender_id]['text']
+    await client.edit_message(event.sender_id, event.message_id, user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['text']+"\n\nSUBMITED\nCheck @pendingauctionpokemon to see status of your pokemon", buttons=Button.clear())
+    await client.send_file(log_channel, user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['image'], caption = user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['text']
         ,
         buttons=[
         [
@@ -284,16 +288,12 @@ async def approvecb(event):
     user_id = event.sender_id
     if user_id in xmods:
         sender = await event.get_sender()
-        if sender.username:
-            await client.edit_message(log_channel, event.message_id, user_cache[event.sender_id]['text']+"\n\nApproved by @"+sender.username+"  (`"+str(user_id)+"`)\n#APPROVED", buttons=Button.clear())
-            await client.send_file(post_channel, user_cache[event.sender_id]['image'], caption = user_cache[event.sender_id]['text'])
-            await client.send_file(user_cache[event.sender_id]['ID'], user_cache[event.sender_id]['image'], caption = user_cache[event.sender_id]['text']+"\n\nApproved by "+sender.username+"  (`"+str(user_id)+"`)")
-        else:
-            await client.edit_message(log_channel, event.message_id, user_cache[event.sender_id]['text']+"\n\nApproved by "+sender.fullname+"  (`"+str(user_id)+"`)", buttons=Button.clear())
-            await client.send_file(post_channel, user_cache[event.sender_id]['image'], caption = user_cache[event.sender_id]['text'])
-            await client.send_file(user_cache[event.sender_id]['ID'], user_cache[event.sender_id]['image'], caption = user_cache[event.sender_id]['text']+"\n\nApproved by "+sender.fullname+"  (`"+str(user_id)+"`)\n#APPROVED")
+        await client.edit_message(log_channel, event.message_id, user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['text']+"\n\nApproved", buttons=Button.clear())
+        await client.send_file(post_channel, user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['image'], caption = user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['text'])
+        await client.send_file(user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['ID'], user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['image'], caption = user_cache[event.sender_id]['name'][user_cache[user_id]['ligma']]['text']+"\n\nApproved by")
     else:
         await event.answer('You are not the auctioneer', alert=True)
+
 
 @client.on(events.CallbackQuery(data= 'reject'))
 async def rejectcb(event):
