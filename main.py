@@ -14,6 +14,8 @@ TOKEN = os.environ.get('TOKEN', None)
 TRADE_CHANNEL = os.environ.get('TRADE_CHANNEL', None)
 BETRAYED_CHANNEL = os.environ.get('BETRAYED_CHANNEL', None)
 SCAMMER_CHANNEL = os.environ.get('SCAMMER_CHANNEL', None)
+COMPLETED_CHANNEL = os.environ.get('COMPLETED_CHANNEL', None)
+
 
 
 api_id = API_ID
@@ -22,6 +24,7 @@ bot_token = TOKEN
 trade_channel = int(TRADE_CHANNEL)
 betrayed_channel = int(BETRAYED_CHANNEL)
 scammer_channel = int(SCAMMER_CHANNEL)
+completed_channel = int(COMPLETED_CHANNEL)
 
 
 client = TelegramClient('konekgub', api_id, api_hash).start(bot_token=bot_token) #i dont really understand it lol but without this bot wont work
