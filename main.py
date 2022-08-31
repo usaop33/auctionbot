@@ -67,15 +67,15 @@ async def start(event):
         ],
         [
             Button.url('𝙶𝚁𝙾𝚄𝙿', 'https://t.me/shinyhubtrade'),
+            Button.url('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', 'https://t.me/hexaauctiontrade')
+        ],
+        [
+            Button.url('𝙻𝙾𝙶𝚂 𝙱𝙾𝚃', 'https://t.me/auctionlogbot'),
             Button.url('𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳', 'https://t.me/completedtrade')
         ],
         [
             Button.url('𝙱𝙴𝚃𝚁𝙰𝚈𝙴𝙳', 'https://t.me/AUCTIONBETRAYED'),
             Button.url('𝚂𝙲𝙰𝙼𝙼𝙴𝚁', 'https://t.me/AUCTIONSCAMMER')
-        ],
-        [
-            Button.url('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', 'https://t.me/hexaauctiontrade'),
-            Button.url('𝙻𝙾𝙶𝚂 𝙱𝙾𝚃', 'https://t.me/auctionlogbot')
         ]
      ]
     )
