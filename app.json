@@ -25,6 +25,10 @@
             "description" : "If someone was marked as spammer",
             "required" : true
            },
+         "COMPLETED_CHANNEL" : {
+            "description" : "If someone was marked as spammer",
+            "required" : true
+           },
          "SCAMMER_CHANNEL" : {
             "description" : "After rejected post",
             "required" : true
