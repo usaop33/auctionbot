@@ -126,7 +126,7 @@ async def sell(event):
             await conv.send_message('FORWARD THE SOLD POKEMON DETAILS')
             miku = await conv.get_response(timeout = 90000)
             if miku.media:
-                nino = miku.text
+                nino = miku.media
                 yotsuba = miku.text
                 await conv.send_message('Forward SOLD MESSAGE')
                 ichika =  await conv.get_response(timeout = 90000)
