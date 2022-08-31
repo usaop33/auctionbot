@@ -41,7 +41,7 @@ async def start(event):
         ,
         buttons=[
         [
-            Button.inline('𝒜𝒰𝒞𝒯𝐼𝒪𝒩:~', 'auctibdjosnon')
+            Button.inline('ＡＵＣＴＩＯＮ', 'auctibdjosnon')
         ],
         [
             Button.url('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', 'https://t.me/shinyhub_official'),
@@ -52,7 +52,7 @@ async def start(event):
             Button.url('𝙾𝚆𝙽𝙴𝚁', 'https://t.me/gojoxsatrou')
         ],
         [
-            Button.inline('𝒫𝒪𝒦𝐸𝑀𝒪𝒩:~', 'auctibdjosnon')
+            Button.inline('ＰＯＫＥＭＯＮ', 'auctibdjosnon')
         ],
         [
             Button.url('𝙿𝙴𝙽𝙳𝙸𝙽𝙶', 'https://t.me/pendingauctionpokemon'),
@@ -63,7 +63,7 @@ async def start(event):
             Button.url('𝚂𝙲𝙰𝙼𝙼𝙴𝚁', 'https://t.me/AUCTIONSCAMMER')
         ],
         [
-            Button.inline('𝒯𝑅𝒜𝒟𝐸:~', 'auctibdjosnon')
+            Button.inline('ＴＲＡＤＥ', 'auctibdjosnon')
         ],
         [
             Button.url('𝙶𝚁𝙾𝚄𝙿', 'https://t.me/shinyhubtrade'),
