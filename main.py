@@ -35,6 +35,47 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 xmods = 1037179104, 1174476949, 1786637879, 790824807, 5058417875, 1720329781, 1749188073, 1094810637, 1094810637, 5174776869
 dxgays = 5152846377, 1316627940, 1027970627, 1196082322, 1814501074, 378738602, 5348701255, 1244265924, 1895916617, 2060752501, 5174776869, 1267367441
 
+@client.on(events.NewMessage(pattern='/auction'))
+async def start(event):
+    await client.send_file(event.sender_id, 'https://telegra.ph/file/4f6e6f84b0b51714ac46a.jpg', caption = "𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 ✨༈ҤEXλ ŞҤł₦¥ ҤUB ༈✨"
+        ,
+        buttons=[
+        [
+            Button.inline('𝒜𝒰𝒞𝒯𝐼𝒪𝒩:~', 'auctibdjosnon')
+        ],
+        [
+            Button.url('𝙲𝙷𝙰𝙽𝙽𝙴𝙻', 'https://t.me/shinyhub_official'),
+            Button.url('𝙶𝚁𝙾𝚄𝙿', 'https://t.me/hexaauction')
+        ],
+        [
+            Button.url('𝙱𝙾𝚃', 'https://t.me/hexaauctionbot'),
+            Button.url('𝙾𝚆𝙽𝙴𝚁', 'https://t.me/gojoxsatrou')
+        ],
+        [
+            Button.inline('𝒫𝒪𝒦𝐸𝑀𝒪𝒩:~', 'auctibdjosnon')
+        ],
+        [
+            Button.url('𝙿𝙴𝙽𝙳𝙸𝙽𝙶', 'https://t.me/pendingauctionpokemon'),
+            Button.url('𝙰𝙿𝙿𝚁𝙾𝚅𝙴𝙳', 'https://t.me/approvedpokes')
+        ],
+        [
+            Button.url('𝚁𝙴𝙹𝙴𝙲𝚃𝙴𝙳', 'https://t.me/rejectedpoke'),
+            Button.url('𝚂𝙲𝙰𝙼𝙼𝙴𝚁', 'https://t.me/AUCTIONSCAMMER')
+        ],
+        [
+            Button.inline('𝒯𝑅𝒜𝒟𝐸:~', 'auctibdjosnon')
+        ],
+        [
+            Button.url('𝙶𝚁𝙾𝚄𝙿', 'https://t.me/shinyhubtrade'),
+            Button.url('𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳', 'https://t.me/completedtrade')
+        ],
+        [
+            Button.url('𝙱𝙴𝚃𝚁𝙰𝚈𝙴𝙳', 'https://t.me/AUCTIONBETRAYED'),
+            Button.url('𝚂𝙲𝙰𝙼𝙼𝙴𝚁', 'https://t.me/AUCTIONSCAMMER')
+        ],
+     ]
+    )
+
 
 @client.on(events.NewMessage(pattern='/start'))
 async def start(event):
