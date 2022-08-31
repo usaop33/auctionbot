@@ -37,7 +37,7 @@ dxgays = 5152846377, 1316627940, 1027970627, 1196082322, 1814501074, 378738602, 
 
 @client.on(events.NewMessage(pattern='/auction'))
 async def start(event):
-    await client.send_file(event.sender_id, 'https://telegra.ph/file/4f6e6f84b0b51714ac46a.jpg', caption = "𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 ✨༈ҤEXλ ŞҤł₦¥ ҤUB ༈✨"
+    await client.send_file(-1001652436981, 'https://telegra.ph/file/cd3ecf5b1a6850d196703.jpg', caption = "𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 ✨༈ҤEXλ ŞҤł₦¥ ҤUB ༈✨"
         ,
         buttons=[
         [
