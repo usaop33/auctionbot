@@ -210,7 +210,7 @@ async def approvecb(event):
     else:
         await event.answer('You are not the auctioneer', alert=True)
 
-@client.on(events.CallbackQuery(data='scamseller'))
+@client.on(events.CallbackQuery(data='buyer'))
 async def approvecb(event):
     fuck = event.sender_id
     user_id = event.sender_id
@@ -220,12 +220,12 @@ async def approvecb(event):
         sender = await event.get_sender()
         await client.edit_message(trade_channel, event.message_id, buttons=Button.clear())
         await client.forward_messages(betrayed_channel, event.message_id, trade_channel)
-        await client.send_message(betrayed_channel, "Seller betrayed to give pokemon. Marked by @"+fucker.username+"\n\n+1 warn to seller. (4 warns = ban from auction grp)")
+        await client.send_message(betrayed_channel, "Buyer refused to take pokemon. Marked by @"+fucker.username+"\n\n+1 warn to seller. (4 warns = ban from auction grp)")
         await client.delete_messages(trade_channel, event.message_id)
     else:
         await event.answer('You are not the auctioneer', alert=True)
 
-@client.on(events.CallbackQuery(data='buyerscam'))
+@client.on(events.CallbackQuery(data='scamseller'))
 async def approvecb(event):
     fuck = event.sender_id
     user_id = event.sender_id
@@ -240,7 +240,7 @@ async def approvecb(event):
     else:
         await event.answer('You are not the auctioneer', alert=True)
 
-@client.on(events.CallbackQuery(data='buyer'))
+@client.on(events.CallbackQuery(data='buyerscam'))
 async def approvecb(event):
     fuck = event.sender_id
     user_id = event.sender_id
@@ -249,7 +249,7 @@ async def approvecb(event):
         noyou = await event.get_sender()
         sender = await event.get_sender()
         await client.edit_message(trade_channel, event.message_id, buttons=Button.clear())
-        await client.forward_messages(scammer_channel, event.message_id, log_channel)
+        await client.forward_messages(scammer_channel, event.message_id, trade_channel)
         await client.send_message(scammer_channel, "BUYER scammed buyer. Marked by @"+fucker.username+"\n\nTIME TO GBAN MUHAHAHAHA")
         await client.delete_messages(trade_channel, event.message_id)
     else:
