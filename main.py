@@ -208,7 +208,7 @@ async def approvecb(event):
         sender = await event.get_sender()
         await client.edit_message(trade_channel, event.message_id, buttons=Button.clear())
         await client.forward_messages(betrayed_channel, event.message_id, trade_channel)
-        await client.send_message(betrayed_channel, "Seller betrayed to give pokemon. Marked as by @"+fucker.username+"\n\n+1 warn to seller. (4 warns = ban from auction grp)")
+        await client.send_message(betrayed_channel, "Seller betrayed to give pokemon. Marked as betrayed by @"+fucker.username+"\n\n+1 warn to seller. (4 warns = ban from auction grp)")
         await client.delete_messages(trade_channel, event.message_id)
     else:
         await event.answer('You are not the auctioneer', alert=True)
@@ -223,7 +223,7 @@ async def approvecb(event):
         sender = await event.get_sender()
         await client.edit_message(trade_channel, event.message_id, buttons=Button.clear())
         await client.forward_messages(betrayed_channel, event.message_id, trade_channel)
-        await client.send_message(betrayed_channel, "Buyer refused to take pokemon. Marked by @"+fucker.username+"\n\n+1 warn to seller. (4 warns = ban from auction grp)")
+        await client.send_message(betrayed_channel, "Buyer refused to take pokemon. Marked as betrayed by @"+fucker.username+"\n\n+1 warn to seller. (4 warns = ban from auction grp)")
         await client.delete_messages(trade_channel, event.message_id)
     else:
         await event.answer('You are not the auctioneer', alert=True)
@@ -238,7 +238,7 @@ async def approvecb(event):
         sender = await event.get_sender()
         await client.edit_message(trade_channel, event.message_id, buttons=Button.clear())
         await client.forward_messages(scammer_channel, event.message_id, trade_channel)
-        await client.send_message(scammer_channel, "SELLER scammed buyer . Marked by @"+fucker.username+"\n\nTIME TO GBAN MUHAHAHAHA")
+        await client.send_message(scammer_channel, "Seller scammed buyer . Marked as scammer by @"+fucker.username+"\n\nTIME TO GBAN MUHAHAHAHA")
         await client.delete_messages(trade_channel, event.message_id)
     else:
         await event.answer('You are not the auctioneer', alert=True)
@@ -253,7 +253,7 @@ async def approvecb(event):
         sender = await event.get_sender()
         await client.edit_message(trade_channel, event.message_id, buttons=Button.clear())
         await client.forward_messages(scammer_channel, event.message_id, trade_channel)
-        await client.send_message(scammer_channel, "BUYER scammed buyer. Marked by @"+fucker.username+"\n\nTIME TO GBAN MUHAHAHAHA")
+        await client.send_message(scammer_channel, "BUYER scammed buyer. Marked as scammer by @"+fucker.username+"\n\nTIME TO GBAN MUHAHAHAHA")
         await client.delete_messages(trade_channel, event.message_id)
     else:
         await event.answer('You are not the auctioneer', alert=True)
