@@ -136,7 +136,7 @@ async def sell(event):
                 user_cache[user_id]['image'] = nino
                 nakano = yotsuba+"\n\n"+shikimori
                 user_cache[user_id]['text'] = nakano
-                await client.send_file(event.sender_id, file = huh, caption = hmm
+                await client.send_file(event.sender_id, file = nino, caption = nakano
                     ,
                     buttons=[
                     [
