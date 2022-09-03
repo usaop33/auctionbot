@@ -50,7 +50,7 @@ async def start(event):
         ],
         [
             Button.url('𝙱𝙾𝚃', 'https://t.me/hexaauctionbot'),
-            Button.url('𝙾𝚆𝙽𝙴𝚁', 'https://t.me/gojoxsatrou')
+            Button.url('𝚁𝚄𝙻𝙴𝚂', 'http://t.me/officerjennyprobot?start=-1001763955719')
         ],
         [
             Button.inline('ＰＯＫＥＭＯＮ', 'auctibdjosnon')
