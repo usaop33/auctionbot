@@ -34,55 +34,55 @@
             "required" : true
            },
          "POST_CHANNEL" : {
-            "description" : "After accepted the thing will be posted here",
+            "description" : "Logs of approved pokemon final channel",
             "required" : true
            },
           "OWNER_USERNAME" : { 
-             "description" : "After accepted the thing will be posted here", 
+             "description" : "Owner username dont use ('@')", 
              "required" : true 
             },
           "AUCTION_GROUP_LINK" : { 
-             "description" : "After accepted the thing will be posted here", 
+             "description" : "Your auction group link", 
              "required" : true 
             },
           "START_IMAGE" : { 
-             "description" : "After accepted the thing will be posted here", 
+             "description" : "Start image enter in tgm format", 
              "required" : true 
             },
           "CAPTION" : { 
-             "description" : "After accepted the thing will be posted here", 
+             "description" : "CAPTION of /start message", 
              "required" : true 
             },
           "PENDING_CHANNEL_LINK" : { 
-             "description" : "After accepted the thing will be posted here", 
+             "description" : "Link of waiting/pending channel", 
              "required" : true 
             },
           "APPROVED_CHANNEL_LINK" : { 
-             "description" : "After accepted the thing will be posted here", 
+             "description" : "Link of approved pokemon channel", 
              "required" : true 
             },
           "REJECTED_CHANNEL_LINK" : { 
-             "description" : "After accepted the thing will be posted here", 
+             "description" : "Logs of rejected pokemon", 
              "required" : true 
             },
           "SCAMMER_CHANNEL_LINK" : { 
-             "description" : "After accepted the thing will be posted here", 
+             "description" : "Logs of scammer", 
              "required" : true 
             },
           "COMMUNITY_NAME" : { 
-             "description" : "After accepted the thing will be posted here", 
+             "description" : "Enter your fed or team Name", 
              "required" : true 
             },
           "COMMUNITY_LINK" : { 
-             "description" : "After accepted the thing will be posted here", 
+             "description" : "Enter your fed or team link", 
              "required" : true 
             },
           "APPROVE_LIST" : { 
-             "description" : "After accepted the thing will be posted here", 
+             "description" : "User id of those who will be able to approve or reject. Seperated by comma", 
              "required" : true 
             },
           "ENEMY_LIST" : { 
-             "description" : "After accepted the thing will be posted here", 
+             "description" : "User id of enemy whom you want to block.. from using bot if they try to use the bot will abuse them", 
              "required" : true 
             }
       } 
