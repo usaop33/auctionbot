@@ -6,7 +6,7 @@ from telethon.tl.types import MessageEntityCode
 from telethon import TelegramClient, events, Button
 import telethon.sync #lol copied from docs
 import asyncio
-import logging #lol copied from docs
+import logging
 
 API_ID = os.environ.get('API_ID', None)
 API_HASH = os.environ.get('API_HASH', None)
@@ -44,7 +44,8 @@ approve_channel = int(APPROVE_CHANNEL)
 CAPTION = str(CAPTION)
 COMMUNITY_LINK = str(COMMUNITY_LINK)
 OWNER_USERNAME = str(OWNER_USERNAME)
-OWNER_LINK = "https://t.me/"+OWNER_USERNAME
+OWN_LINK = "https://t.me/"+OWNER_USERNAME
+OWNER_LINK = str(OWN_LINK)
 AUCTION_CHANNEL_LINK = str(AUCTION_CHANNEL_LINK)
 AUCTION_GROUP_LINK = str(AUCTION_GROUP_LINK)
 
