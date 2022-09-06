@@ -46,8 +46,8 @@ COMMUNITY_LINK = str(COMMUNITY_LINK)
 OWNER_USERNAME = str(OWNER_USERNAME)
 AUCTION_CHANNEL_LINK = str(AUCTION_CHANNEL_LINK)
 AUCTION_GROUP_LINK = str(AUCTION_GROUP_LINK)
-OWNER_LINK = 'https://t.me/'+OWNER_USERNAME
-OWNER_LINK = str(OWNER_LINK)
+OWNER_LOL = 'https://t.me/{}'
+OWNER_LINK = OWNER_LOL.format(OWNER_USERNAME)
 
 
 client = TelegramClient('aucbot', api_id, api_hash).start(bot_token=bot_token) #i dont really understand it lol but without this bot wont work
