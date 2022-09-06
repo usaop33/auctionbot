@@ -68,7 +68,7 @@ async def start(event):
             Button.url('CHANNEL', AUCTION_CHANNEL_LINK)
         ],
         [
-            Button.url('OWNER', OWNER_LINK),
+            Button.url('OWNER', "https://t.me/"+OWNER_USERNAME)
         ]
       ]
     )
