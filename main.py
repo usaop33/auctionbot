@@ -74,6 +74,7 @@ async def start(event):
         ],
         [
             Button.url(COMMUNITY_NAME, COMMUNITY_LINK)
+        ]
       ]
     )
 
