@@ -79,7 +79,44 @@ async def start(event):
     )
 
 
+@client.on(events.CallbackQuery(data='ABOUT'))
+async def submitcb(event):
+    await client.edit_message(event.sender_id, event.message_id, "Hey!\nMy developer - @GOJOXSATROU\n\nDo you want to make a similar bot?\n~Check the buttons given below", 
+        buttons=[
+        [
+            Button.url('CODES', 'https://github.com/CUSTOMFAIL/auction-test')
+        ],
+        [
+            Button.url('DIRECT DEPLOY', 'https://heroku.com/deploy?template=https://github.com/CUSTOMFAIL/auction-test')
+        ],
+        [
+            Button.url('OWNER', 'https://t.me/gojoxsatrou'),
+            Button.url('X MOD', 'https://t.me/xmodnews')
+        ],
+        [
+            Button.inline('Back', 'BAMCK')
+        ]
+      ]  
+    )
 
+@client.on(events.CallbackQuery(data='BAMCK'))
+async def submitcb(event):
+    await client.edit_message(event.sender_id, event.message_id, CAPTION
+        ,
+        buttons=[
+        [
+            Button.url('AUCTION', AUCTION_GROUP_LINK),
+            Button.url('CHANNEL', AUCTION_CHANNEL_LINK)
+        ],
+        [
+            Button.url('OWNER', OWNER_LINK),
+            Button.inline('ABOUT', 'ABOUT')
+        ],
+        [
+            Button.url(COMMUNITY_NAME, COMMUNITY_LINK)
+        ]
+      ]
+    )
 
 user_cache = {}
 
