@@ -41,6 +41,8 @@ post_channel = int(post_channel)
 scammer_channel = int(MOD_CHANNEL)
 reject_channel = int(REJECT_CHANNEL)
 approve_channel = int(APPROVE_CHANNEL)
+START_IMAGE = str(START_IMAGE)
+CAPTION = str(CAPTION)
 
 OWNER_LINK = 'https://t.me/'+OWNER_USERNAME
 
@@ -55,7 +57,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 @client.on(events.NewMessage(pattern='/start'))
 async def start(event):
     sender = await event.get_sender()
-    await client.send_file(event.sender_id, START_IMAGE, caption = CAPTION
+    await client.send_file(event.sender_id, file = START_IMAGE, caption = CAPTION
         ,
         buttons=[
         [
