@@ -28,7 +28,7 @@ SCAMMER_CHANNEL_LINK = os.environ.get('SCAMMER_CHANNEL_LINK', None)
 COMMUNITY_NAME = os.environ.get('COMMUNITY_NAME', None)
 COMMUNITY_LINK = os.environ.get('COMMUNITY_LINK', None)
 APPROVE_LIST = os.environ.get('APPROVE_LIST', None)
-ENEMY_LIST = os.environ.get('ENEMY_LIST', None)
+ENEMY_LIST = set(int(x) for x in os.environ.get("APPROVE_LIST", "").split())
 
 
 api_id = API_ID
@@ -50,10 +50,6 @@ AUCTION_CHANNEL_LINK = str(AUCTION_CHANNEL_LINK)
 AUCTION_GROUP_LINK = str(AUCTION_GROUP_LINK)
 dxgays = ENEMY_LIST
 xmods = APPROVE_LIST
-
-dxgays = set(int(x) for x in os.environ.get("ENEMY_LIST", "").split())
-xmods = set(int(x) for x in os.environ.get("APPROVE_LIST", "").split())
-
 
 client = TelegramClient('aucbot', api_id, api_hash).start(bot_token=bot_token) #i dont really understand it lol but without this bot wont work
 
