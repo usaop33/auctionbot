@@ -27,8 +27,8 @@ REJECTED_CHANNEL_LINK = os.environ.get('REJECTED_CHANNEL_LINK', None)
 SCAMMER_CHANNEL_LINK = os.environ.get('SCAMMER_CHANNEL_LINK', None)
 COMMUNITY_NAME = os.environ.get('COMMUNITY_NAME', None)
 COMMUNITY_LINK = os.environ.get('COMMUNITY_LINK', None)
-APPROVE_LIST = os.environ.get('APPROVE_LIST', None)
-ENEMY_LIST = set(int(x) for x in os.environ.get("APPROVE_LIST", "").split())
+APPROVE_LIST = set(int(x) for x in os.environ.get("APPROVE_LIST", "").split())
+ENEMY_LIST = set(int(x) for x in os.environ.get("ENEMY_LIST", "").split())
 
 
 api_id = API_ID
