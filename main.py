@@ -43,7 +43,7 @@ reject_channel = int(REJECT_CHANNEL)
 approve_channel = int(APPROVE_CHANNEL)
 CAPTION = str(CAPTION)
 COMMUNITY_LINK = str(COMMUNITY_LINK)
-OWNER_USERNAME = "www.google.com"
+OWNER_LINK = "https://t.me/{}".format(OWNER_USERNAME)
 AUCTION_CHANNEL_LINK = str(AUCTION_CHANNEL_LINK)
 AUCTION_GROUP_LINK = str(AUCTION_GROUP_LINK)
 
@@ -67,7 +67,7 @@ async def start(event):
             Button.url('CHANNEL', AUCTION_CHANNEL_LINK)
         ],
         [
-            Button.url('OWNER', OWNER_USERNAME),
+            Button.url('OWNER', OWNER_LINK),
         ]
       ]
     )
