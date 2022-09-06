@@ -47,6 +47,7 @@ OWNER_USERNAME = str(OWNER_USERNAME)
 AUCTION_CHANNEL_LINK = str(AUCTION_CHANNEL_LINK)
 AUCTION_GROUP_LINK = str(AUCTION_GROUP_LINK)
 OWNER_LINK = 'https://t.me/'+OWNER_USERNAME
+OWNER_LINK = str(OWNER_LINK)
 
 
 client = TelegramClient('aucbot', api_id, api_hash).start(bot_token=bot_token) #i dont really understand it lol but without this bot wont work
@@ -65,6 +66,13 @@ async def start(event):
         [
             Button.url('AUCTION', AUCTION_GROUP_LINK),
             Button.url('CHANNEL', AUCTION_CHANNEL_LINK)
+        ],
+        [
+            Button.url('OWNER', OWNER_LINK),
+            Button.inline('CREDITS', 'credits')
+        ],
+        [ 
+            Button.url(COMMUNITY_NAME, COMMUNITY_LINK)
         ]
       ]
     )
