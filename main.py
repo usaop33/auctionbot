@@ -43,11 +43,10 @@ reject_channel = int(REJECT_CHANNEL)
 approve_channel = int(APPROVE_CHANNEL)
 CAPTION = str(CAPTION)
 COMMUNITY_LINK = str(COMMUNITY_LINK)
-OWNER_USERNAME = str(OWNER_USERNAME)
+OWNER_USERNAME = "www.google.com"
 AUCTION_CHANNEL_LINK = str(AUCTION_CHANNEL_LINK)
 AUCTION_GROUP_LINK = str(AUCTION_GROUP_LINK)
-OWNER_LOL = 'https://t.me/{}'
-OWNER_LINK = OWNER_LOL.format(OWNER_USERNAME)
+
 
 
 client = TelegramClient('aucbot', api_id, api_hash).start(bot_token=bot_token) #i dont really understand it lol but without this bot wont work
@@ -68,7 +67,7 @@ async def start(event):
             Button.url('CHANNEL', AUCTION_CHANNEL_LINK)
         ],
         [
-            Button.url('OWNER', 'https://t.me/{}'.format(OWNER_USERNAME)),
+            Button.url('OWNER', OWNER_USERNAME),
         ]
       ]
     )
