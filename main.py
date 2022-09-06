@@ -70,7 +70,10 @@ async def start(event):
         ],
         [
             Button.url('OWNER', OWNER_LINK),
-        ]
+            Button.inline('ABOUT', 'ABOUT')
+        ],
+        [
+            Button.url(COMMUNITY_NAME, COMMUNITY_LINK)
       ]
     )
 
