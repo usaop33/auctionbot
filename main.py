@@ -72,7 +72,7 @@ async def start(event):
       ]
     )
 
-@client.on(events.CallbackQuery(data='credits'))
+
 
 
 user_cache = {}
