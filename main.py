@@ -68,7 +68,8 @@ async def start(event):
         ],
         [ 
             Button.url(COMMUNITY_NAME, COMMUNITY_LINK)
-     ]
+        ]
+      ]
     )
 
 @client.on(events.CallbackQuery(data='credits'))
