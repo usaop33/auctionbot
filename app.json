@@ -1,6 +1,6 @@
 {
       "name" : "Auction bot",
-      "description" : "Simple Telegram Bot For LOGS",
+      "description" : "Simple Telegram Bot For auction",
       "repository" : "https://github.com/CUSTOMFAIL/auctionbot",
       "logo" : "data:image/png;base64,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",
       "keywords" : ["nekobest", "telethon"],
@@ -17,22 +17,74 @@
             "description" : "Get From @BotFather",
             "required" : true
            },
-         "TRADE_CHANNEL" : {
+         "LOG_CHANNEL" : {
             "description" : "Here You will accept or reject the form",
             "required" : true
            },
-         "BETRAYED_CHANNEL" : {
+         "MOD_CHANNEL" : {
             "description" : "If someone was marked as spammer",
             "required" : true
            },
-         "COMPLETED_CHANNEL" : {
-            "description" : "If someone was marked as spammer",
+         "APPROVE_CHANNEL" : {
+            "description" : "After accepted the thing will be posted here",
             "required" : true
            },
-         "SCAMMER_CHANNEL" : {
+         "REJECT_CHANNEL" : {
             "description" : "After rejected post",
             "required" : true
-           }
-     }
- }
-      
+           },
+         "POST_CHANNEL" : {
+            "description" : "After accepted the thing will be posted here",
+            "required" : true
+           },
+          "OWNER_USERNAME" : { 
+             "description" : "After accepted the thing will be posted here", 
+             "required" : true 
+            },
+          "AUCTION_GROUP_LINK" : { 
+             "description" : "After accepted the thing will be posted here", 
+             "required" : true 
+            },
+          "START_IMAGE" : { 
+             "description" : "After accepted the thing will be posted here", 
+             "required" : true 
+            },
+          "CAPTION" : { 
+             "description" : "After accepted the thing will be posted here", 
+             "required" : true 
+            },
+          "PENDING_CHANNEL_LINK" : { 
+             "description" : "After accepted the thing will be posted here", 
+             "required" : true 
+            },
+          "APPROVED_CHANNEL_LINK" : { 
+             "description" : "After accepted the thing will be posted here", 
+             "required" : true 
+            },
+          "REJECTED_CHANNEL_LINK" : { 
+             "description" : "After accepted the thing will be posted here", 
+             "required" : true 
+            },
+          "SCAMMER_CHANNEL_LINK" : { 
+             "description" : "After accepted the thing will be posted here", 
+             "required" : true 
+            },
+          "COMMUNITY_NAME" : { 
+             "description" : "After accepted the thing will be posted here", 
+             "required" : true 
+            },
+          "COMMUNITY_LINK" : { 
+             "description" : "After accepted the thing will be posted here", 
+             "required" : true 
+            },
+          "APPROVE_LIST" : { 
+             "description" : "After accepted the thing will be posted here", 
+             "required" : true 
+            },
+          "ENEMY_LIST" : { 
+             "description" : "After accepted the thing will be posted here", 
+             "required" : true 
+            }
+      } 
+  } 
+       
