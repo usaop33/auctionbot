@@ -70,6 +70,7 @@ async def start(event):
             Button.url('CHANNEL', AUCTION_CHANNEL_LINK)
         ],
         [
+            Button.inline('OWNER', OWNER_LINK),
             Button.inline('ABOUT', 'ABOUT')
         ],
         [
