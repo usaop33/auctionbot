@@ -62,7 +62,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 async def start(event):
     sender = await event.get_sender()
     await client.send_message(event.sender_id, OWNER_LINK)
-    await client.send_file(event.sender_id, START_IMAGE, caption = START_CAPTION
+    await client.send_file(event.sender_id, START_IMAGE, caption = CAPTION
         ,
         buttons=[
         [
@@ -71,10 +71,6 @@ async def start(event):
         ],
         [
             Button.url('OWNER', OWNER_LINK),
-            Button.inline('ABOUT', 'ABOUT')
-        ],
-        [
-            Button.url(COMMUNITY_NAME, COMMUNITY_LINK)
         ]
       ]
     )
