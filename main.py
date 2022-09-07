@@ -65,8 +65,8 @@ async def start(event):
         ,
         buttons=[
         [
-            Button.url('AUCTION', LIGMA),
-            Button.url('CHANNEL', SUGMA)
+            Button.url('AUCTION', AUCTION_GROUP_LINK),
+            Button.url('CHANNEL', AUCTION_CHANNEL_LINK)
         ]
       ]
     )
