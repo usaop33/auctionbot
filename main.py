@@ -65,13 +65,6 @@ async def start(event):
         [
             Button.url('AUCTION', AUCTION_GROUP_LINK),
             Button.url('CHANNEL', AUCTION_CHANNEL_LINK)
-        ],
-        [
-            Button.url('OWNER', OWNER_LINK),
-            Button.inline('ABOUT', 'ABOUT')
-        ],
-        [
-            Button.url(COMMUNITY_NAME, COMMUNITY_LINK)
         ]
       ]
     )
