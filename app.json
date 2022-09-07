@@ -42,7 +42,7 @@
              "required" : true 
             },
           "AUCTION_CHANNEL_LINK" : { 
-             "description" : "Your auction channel link. FORMAT:- GROUP LINK", 
+             "description" : "Your auction channel link. FORMAT:- CHANNEL LINK", 
              "required" : true 
             }, 
           "AUCTION_GROUP_LINK" : { 
