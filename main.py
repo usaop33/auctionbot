@@ -20,7 +20,7 @@ OWNER_USERNAME = os.environ.get('OWNER_USERNAME', None)
 AUCTION_GROUP_LINK = os.environ.get('AUCTION_GROUP_LINK', None)
 AUCTION_CHANNEL_LINK = os.environ.get('AUCTION_CHANNEL_LINK', None)
 START_IMAGE = os.environ.get('START_IMAGE', None)
-CAPTION = os.environ.get('CAPTION', None)
+START_CAPTION = os.environ.get('START_CAPTION', None)
 PENDING_CHANNEL_LINK = os.environ.get('PENDING_CHANNEL_LINK', None)
 APPROVED_CHANNEL_LINK = os.environ.get('APPROVED_CHANNEL_LINK', None)
 REJECTED_CHANNEL_LINK = os.environ.get('REJECTED_CHANNEL_LINK', None)
@@ -41,7 +41,7 @@ post_channel = int(post_channel)
 scammer_channel = int(MOD_CHANNEL)
 reject_channel = int(REJECT_CHANNEL)
 approve_channel = int(APPROVE_CHANNEL)
-CAPTION = str(CAPTION)
+START_CAPTION = str(START_CAPTION)
 COMMUNITY_LINK = str(COMMUNITY_LINK)
 OWNER_USERNAME = str(OWNER_USERNAME)
 OWN_LINK = "https://t.me/"+OWNER_USERNAME
@@ -61,7 +61,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 @client.on(events.NewMessage(pattern='/start'))
 async def start(event):
     sender = await event.get_sender()
-    await client.send_file(event.sender_id, START_IMAGE, caption = CAPTION
+    await client.send_file(event.sender_id, START_IMAGE, caption = START_CAPTION
         ,
         buttons=[
         [
