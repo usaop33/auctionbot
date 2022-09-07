@@ -48,6 +48,8 @@ AUCTION_CHANNEL_LINK = str(AUCTION_CHANNEL_LINK)
 AUCTION_GROUP_LINK = str(AUCTION_GROUP_LINK)
 dxgays = ENEMY_LIST
 xmods = APPROVE_LIST
+LIGMA = 'https://t.me/GOJOSATROU'
+SUGMA = 'https://t.me/GOJOSATROU'
 
 client = TelegramClient('aucbot', api_id, api_hash).start(bot_token=bot_token) #i dont really understand it lol but without this bot wont work
 
@@ -63,8 +65,8 @@ async def start(event):
         ,
         buttons=[
         [
-            Button.url('AUCTION', 'https://t.me/GOJOSATROU'),
-            Button.url('CHANNEL', 'https://t.me/GOJOSATROU')
+            Button.url('AUCTION', LIGMA),
+            Button.url('CHANNEL', SUGMA)
         ]
       ]
     )
