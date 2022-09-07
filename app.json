@@ -18,23 +18,23 @@
             "required" : true
            },
          "PENDING_CHANNEL" : {
-            "description" : "Here You will accept or reject the form",
+            "description" : "Here You will accept or reject the form. FORMAT:- CHANNEL ID",
             "required" : true
            },
          "SCAMMER_CHANNEL" : {
-            "description" : "If someone was marked as scammer",
+            "description" : "If someone was marked as scammer. FORMAT:- CHANNEL ID",
             "required" : true
            },
          "APPROVE_CHANNEL" : {
-            "description" : "After accepted the thing will be posted here",
+            "description" : "After accepted the thing will be posted here. FORMAT:- CHANNEL ID",
             "required" : true
            },
          "REJECT_CHANNEL" : {
-            "description" : "After rejected post",
+            "description" : "After rejected post. FORMAT:- CHANNEL ID",
             "required" : true
            },
          "POST_CHANNEL" : {
-            "description" : "Logs of approved pokemon final channel",
+            "description" : "Logs of approved pokemon final channel. . FORMAT:- CHANNEL ID/GRP ID",
             "required" : true
            },
           "OWNER_USERNAME" : { 
@@ -42,39 +42,39 @@
              "required" : true 
             },
           "AUCTION_GROUP_LINK" : { 
-             "description" : "Your auction group link", 
+             "description" : "Your auction group link. FORMAT:- GROUP LINK", 
              "required" : true 
             },
           "START_IMAGE" : { 
-             "description" : "Start image enter in tgm format", 
+             "description" : "Start image enter in tgm format. Send a pic to @officerjennyprobot and tag it and use /tgm", 
              "required" : true 
             },
           "START_CAPTION" : { 
-             "description" : "CAPTION of /start message", 
+             "description" : "CAPTION of /start message. Read https://telegra.ph/AUCTION-BOT-09-06 to see more ways to customize", 
              "required" : true 
             },
           "PENDING_CHANNEL_LINK" : { 
-             "description" : "Link of waiting/pending channel", 
+             "description" : "Link of waiting/pending channel. FORMAT:- CHANNEL LINK", 
              "required" : true 
             },
           "APPROVED_CHANNEL_LINK" : { 
-             "description" : "Link of approved pokemon channel", 
+             "description" : "Link of approved pokemon channel. FORMAT:- CHANNEL LINK", 
              "required" : true 
             },
           "REJECTED_CHANNEL_LINK" : { 
-             "description" : "Logs of rejected pokemon", 
+             "description" : "Logs of rejected pokemon. FORMAT:- CHANNEL LINK", 
              "required" : true 
             },
           "SCAMMER_CHANNEL_LINK" : { 
-             "description" : "Logs of scammer", 
+             "description" : "Logs of scammer. FORMAT:- CHANNEL LINK", 
              "required" : true 
             },
           "COMMUNITY_NAME" : { 
-             "description" : "Enter your fed or team Name", 
+             "description" : "Enter your fed or team Name. EX - XMOD", 
              "required" : true 
             },
           "COMMUNITY_LINK" : { 
-             "description" : "Enter your fed or team link", 
+             "description" : "Enter your fed or team link.", 
              "required" : true 
             },
           "APPROVE_LIST" : { 
@@ -82,7 +82,7 @@
              "required" : true 
             },
           "ENEMY_LIST" : { 
-             "description" : "User id of enemy whom you want to block.. from using bot if they try to use the bot will abuse them. seprated by space", 
+             "description" : "User id of enemy whom you want to block.. from using bot if they try to use the bot will abuse them. seprated by space. IF NONE - COPY PASTE IT 11111111 22222222", 
              "required" : true 
             }
       } 
