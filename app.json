@@ -17,12 +17,12 @@
             "description" : "Get From @BotFather",
             "required" : true
            },
-         "LOG_CHANNEL" : {
+         "PENDING_CHANNEL" : {
             "description" : "Here You will accept or reject the form",
             "required" : true
            },
-         "MOD_CHANNEL" : {
-            "description" : "If someone was marked as spammer",
+         "SCAMMER_CHANNEL" : {
+            "description" : "If someone was marked as scammer",
             "required" : true
            },
          "APPROVE_CHANNEL" : {
@@ -49,7 +49,7 @@
              "description" : "Start image enter in tgm format", 
              "required" : true 
             },
-          "CAPTION" : { 
+          "START_CAPTION" : { 
              "description" : "CAPTION of /start message", 
              "required" : true 
             },
