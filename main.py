@@ -16,7 +16,7 @@ POST_CHANNEL = os.environ.get('POST_CHANNEL', None)
 SCAMMER_CHANNEL = os.environ.get('SCAMMER_CHANNEL', None)
 REJECT_CHANNEL = os.environ.get('REJECT_CHANNEL', None)
 APPROVE_CHANNEL = os.environ.get('APPROVE_CHANNEL', None)
-OWNER_LINK = os.environ.get('OWNER_LINK', None)
+OWNER_USERNAME = os.environ.get('OWNER_USERNAME', None)
 AUCTION_GROUP_LINK = os.environ.get('AUCTION_GROUP_LINK', None)
 AUCTION_CHANNEL_LINK = os.environ.get('AUCTION_CHANNEL_LINK', None)
 START_IMAGE = os.environ.get('START_IMAGE', None)
@@ -43,13 +43,12 @@ reject_channel = int(REJECT_CHANNEL)
 approve_channel = int(APPROVE_CHANNEL)
 START_CAPTION = str(START_CAPTION)
 COMMUNITY_LINK = str(COMMUNITY_LINK)
+OWNER_LINK = 'https://t.me/'+OWNER_USERNAME
 OWNER_LINK = str(OWNER_LINK)
 AUCTION_CHANNEL_LINK = str(AUCTION_CHANNEL_LINK)
 AUCTION_GROUP_LINK = str(AUCTION_GROUP_LINK)
 dxgays = ENEMY_LIST
 xmods = APPROVE_LIST
-LIGMA = 'https://t.me/GOJOSATROU'
-SUGMA = 'https://t.me/GOJOSATROU'
 
 client = TelegramClient('aucbot', api_id, api_hash).start(bot_token=bot_token) #i dont really understand it lol but without this bot wont work
 
@@ -61,15 +60,24 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 @client.on(events.NewMessage(pattern='/start'))
 async def start(event):
     sender = await event.get_sender()
+    await client.send_message(event.sender_id, OWNER_LINK)
     await client.send_file(event.sender_id, START_IMAGE, caption = START_CAPTION
         ,
         buttons=[
         [
-            Button.url('AUCTION', url=(AUCTION_GROUP_LINK)),
-            Button.url('CHANNEL', url=(AUCTION_CHANNEL_LINK))
+            Button.url('AUCTION', AUCTION_GROUP_LINK),
+            Button.url('CHANNEL', AUCTION_CHANNEL_LINK)
+        ],
+        [
+            Button.url('OWNER', OWNER_LINK),
+            Button.inline('ABOUT', 'ABOUT')
+        ], 
+        [
+            Button.url(COMMUNITY_NAME, COMMUNITY_LINK)
         ]
       ]
     )
+
 
 
 @client.on(events.CallbackQuery(data='ABOUT'))
