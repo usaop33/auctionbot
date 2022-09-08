@@ -7,11 +7,11 @@
 </h2>
 <br>
 <h3>
-OWNER - <a href = "https://t.me/gojoxsatrou"> 'GOJOXSATROU' 
+OWNER - <a href = "https://t.me/gojoxsatrou">OWNER GOJOXSATROU 
 </h3>
 <br>
 <h3>
-POWERED BY - <a href = "https://t.me/xmodnews">X MOD
+<a href = "https://t.me/xmodnews">POWERED BY X MOD
 </h3>
 <br>
 <h3> <a href = "https://telegra.ph/AUCTION-BOT-09-06"> COMPLETE GUIDE TO DEPLOY
