@@ -563,6 +563,9 @@ async def submitcb(event):
             Button.inline('REJECT INCOMPLETE', 'rejinco')
         ],
         [
+            Button.inline('REJECT HIGH BASE', 'highbase')
+        ],
+        [
             Button.inline('REPORT AS SCAMMER', 'scammer')
         ]
       ]
@@ -601,6 +604,9 @@ async def submitcb(event):
         ],
         [
             Button.inline('REJECT INCOMPLETE', 'rejinco')
+        ],
+        [
+            Button.inline('REJECT INCOMPLETE', 'highbase')
         ],
         [
             Button.inline('REPORT AS SCAMMER', 'scammer')
@@ -669,6 +675,21 @@ async def approvecb(event):
         await client.edit_message(log_channel, event.message_id, buttons=Button.clear())
         await client.forward_messages(reject_channel, event.message_id, log_channel)
         await client.send_message(reject_channel, "Rejected incomplete details. Rejected by @"+fucker.username)
+        await client.delete_messages(log_channel, event.message_id)
+    else:
+        await event.answer('You are not the auctioneer', alert=True)
+        
+@client.on(events.CallbackQuery(data='highbase'))
+async def approvecb(event):
+    fuck = event.sender_id
+    user_id = event.sender_id
+    fucker = await event.get_sender()
+    if user_id in xmods:
+        noyou = await event.get_sender()
+        sender = await event.get_sender()
+        await client.edit_message(log_channel, event.message_id, buttons=Button.clear())
+        await client.forward_messages(reject_channel, event.message_id, log_channel)
+        await client.send_message(reject_channel, "Rejected because high base. Rejected by @"+fucker.username)
         await client.delete_messages(log_channel, event.message_id)
     else:
         await event.answer('You are not the auctioneer', alert=True)
