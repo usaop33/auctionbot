@@ -173,6 +173,10 @@ async def yescb(event):
         ]
      ]
     )
+    
+@client.on(events.CallbackQuery(data='No'))
+async def legendarycb(event):
+    await client.edit_message(event.sender_id, event.message_id, 'OK! Legendary', buttons=Button.clear())
 
 @client.on(events.CallbackQuery(data='legendary'))
 async def legendarycb(event):
