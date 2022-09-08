@@ -708,7 +708,7 @@ async def approvecb(event):
     else:
         await event.answer('You are not the auctioneer', alert=True)
         
-@sree.on(events.NewMessage(pattern='dxgays'))
+@client.on(events.NewMessage(pattern='dxgays'))
 async def bun(event):
   if event.sender.id == 1037179104:
    if not event.is_group:
