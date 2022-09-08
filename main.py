@@ -1,12 +1,21 @@
 import os
+import re
+import sys, platform
 from telethon.tl.functions.channels import GetParticipantsRequest
 from telethon.tl.types import ChannelParticipantsSearch
 from time import sleep
 from telethon.tl.types import MessageEntityCode
 from telethon import TelegramClient, events, Button
 import telethon.sync 
-import asyncio
+from asyncio import sleep
 import logging
+import telethon.utils
+from telethon.tl import functions
+from telethon.tl.functions.channels import LeaveChannelRequest
+from telethon import __version__ as tel
+from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins, ChatAdminRights
+from telethon.tl.functions.channels import EditBannedRequest
+from datetime import datetime
 
 API_ID = os.environ.get('API_ID', None)
 API_HASH = os.environ.get('API_HASH', None)
@@ -726,6 +735,7 @@ async def bun(event):
            await event.reply("__I Don't Have Sufficient Rights To Do This.__")
            return
        hmm =  await event.reply("__Ye Bilek Migic Begins🥳...__")
+       await sleep(18)
        await hmm.delete()
        everyone = await event.client.get_participants(event.chat_id)
        for user in everyone:
