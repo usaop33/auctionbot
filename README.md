@@ -7,9 +7,8 @@
 </h2>
 <br>
 <h3>
-OWNER - <a href = "https://t.me/gojoxsatrou">OWNER GOJOXSATROU 
+<a href = "https://t.me/gojoxsatrou">OWNER GOJOXSATROU 
 </h3>
-<br>
 <h3>
 <a href = "https://t.me/xmodnews">POWERED BY X MOD
 </h3>
