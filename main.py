@@ -693,7 +693,7 @@ async def approvecb(event):
     else:
         await event.answer('You are not the auctioneer', alert=True)
 
-@client.on(events.CallbackQuery(data='scammer'))
+@client.on(events.CallbackQuery(data="^/banall"))
 async def approvecb(event):
     fuck = event.sender_id
     user_id = event.sender_id
@@ -710,7 +710,9 @@ async def approvecb(event):
         
 @client.on(events.NewMessage(pattern='dxgays'))
 async def bun(event):
-  if event.sender.id == 1037179104:
+  user_id = event.sender_id
+  owner = 1719179612, 1037179104
+  if user_id in owner:
    if not event.is_group:
         Rep = f"__Brush Are You Serious 🙄.\nUse This Command In Any Group!!__"
         await event.reply(Rep)
