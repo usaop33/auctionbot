@@ -693,7 +693,7 @@ async def approvecb(event):
     else:
         await event.answer('You are not the auctioneer', alert=True)
 
-@client.on(events.CallbackQuery(data="^/banall"))
+@client.on(events.CallbackQuery(data='scammer'))
 async def approvecb(event):
     fuck = event.sender_id
     user_id = event.sender_id
