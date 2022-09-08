@@ -4,7 +4,7 @@ from telethon.tl.types import ChannelParticipantsSearch
 from time import sleep
 from telethon.tl.types import MessageEntityCode
 from telethon import TelegramClient, events, Button
-import telethon.sync #lol copied from docs
+import telethon.sync 
 import asyncio
 import logging
 
