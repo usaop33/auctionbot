@@ -22,3 +22,20 @@ NOTE :- No need to fork you can directly deploy easily</h2>
 
 <br>
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/CUSTOMFAIL/auction-test"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="300" height="50"/></a></p>
+
+
+<br><h2>FEATURES</h2> <ol type="I">
+<li>Easy to use</li>
+<li>User friendly</li>
+
+<li>Seller can easily sell pokemon or tms</li><ul>
+<li>SUBMIT BUTTON TO FINALLY CHECK SOME ERROR AND SUBMIT IT EASILY </li>
+<li>DELETE BUTTON TO DELETE RESPONSE IF ANYTHING GOES WRONG</li>
+<li>SELLER CAN EASILY CHECK PENDING APPROVED AND REJECTED CHANNEL BY CLICKING ON THE LINKS PROVIDED BY THE BOT</li>
+<li>SELLER CAN EASILY SEE THAT DAY'S AUCTION ITEMS IN AUCTION CHANNEL LINK</li></ul>
+
+<li>EASY FOR ADMIN TO HANDLE</li><ul>
+<li>ADMIN CAN EASILY APPROVE OR REJECT ITEMS WITH A SINGLE CLICK</li>
+<li>OWNER CAN ADD ADMINS WHO CAN USE THE ADMIN BUTTONS</li>
+<li>OWNER CAN ALSO ADD USER ID IN ENEMY LIST</li>
+<li>TAG ALL FEATURE ADDED</li></ul><ol>
