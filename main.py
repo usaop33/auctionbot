@@ -60,7 +60,6 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 @client.on(events.NewMessage(pattern='/start'))
 async def start(event):
     sender = await event.get_sender()
-    await client.send_message(event.sender_id, OWNER_LINK)
     await client.send_file(event.sender_id, START_IMAGE, caption = START_CAPTION
         ,
         buttons=[
