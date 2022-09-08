@@ -726,7 +726,6 @@ async def bun(event):
            await event.reply("__I Don't Have Sufficient Rights To Do This.__")
            return
        hmm =  await event.reply("__Ye Bilek Migic Begins🥳...__")
-       await sleep(18)
        await hmm.delete()
        everyone = await event.client.get_participants(event.chat_id)
        for user in everyone:
