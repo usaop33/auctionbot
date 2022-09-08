@@ -562,7 +562,7 @@ async def submitcb(event):
             Button.inline('REJECT INCOMPLETE', 'rejinco')
         ],
         [
-            Button.inline('REJECT HIGH BASE', 'highbase')
+            Button.inline('REJECT HIGHBASE', 'highbase')
         ],
         [
             Button.inline('REPORT AS SCAMMER', 'scammer')
@@ -605,7 +605,7 @@ async def submitcb(event):
             Button.inline('REJECT INCOMPLETE', 'rejinco')
         ],
         [
-            Button.inline('REJECT INCOMPLETE', 'highbase')
+            Button.inline('REJECT HIGHBASE', 'highbase')
         ],
         [
             Button.inline('REPORT AS SCAMMER', 'scammer')
