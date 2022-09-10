@@ -285,7 +285,7 @@ async def legendarycb(event):
 
 @client.on(events.CallbackQuery(data='ol'))
 async def legendarycb(event):
-    await client.edit_message(event.sender_id, event.message_id, 'OK! Legendary', buttons=Button.clear())
+    await client.edit_message(event.sender_id, event.message_id, 'OK! NON Legendary', buttons=Button.clear())
     sender = await event.get_sender()
     user_id = event.sender_id
     msgid = event.message_id
@@ -385,7 +385,7 @@ async def legendarycb(event):
 
 @client.on(events.CallbackQuery(data='shiny'))
 async def legendarycb(event):
-    await client.edit_message(event.sender_id, event.message_id, 'OK! Legendary', buttons=Button.clear())
+    await client.edit_message(event.sender_id, event.message_id, 'OK! Shiny', buttons=Button.clear())
     sender = await event.get_sender()
     user_id = event.sender_id
     msgid = event.message_id
@@ -485,7 +485,7 @@ async def legendarycb(event):
 
 @client.on(events.CallbackQuery(data='tms'))
 async def tmscb(event):
-    await client.edit_message(event.sender_id, event.message_id, 'OK! Legendary', buttons=Button.clear())
+    await client.edit_message(event.sender_id, event.message_id, 'OK! TMS', buttons=Button.clear())
     sender = await event.get_sender()
     user_id = event.sender_id
     msgid = event.message_id
