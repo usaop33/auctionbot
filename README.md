@@ -29,14 +29,14 @@ NOTE :- No need to fork you can directly deploy easily</h2>
 <li>User friendly</li>
 
 <li>Seller can easily sell pokemon or tms</li><ul>
-<li>SUBMIT BUTTON TO FINALLY CHECK SOME ERROR AND SUBMIT IT EASILY </li>
-<li>DELETE BUTTON TO DELETE RESPONSE IF ANYTHING GOES WRONG</li>
-<li>SELLER CAN EASILY CHECK PENDING APPROVED AND REJECTED CHANNEL BY CLICKING ON THE LINKS PROVIDED BY THE BOT</li>
-<li>SELLER CAN EASILY SEE THAT DAY'S AUCTION ITEMS IN AUCTION CHANNEL LINK</li></ul>
+<li>Submit button to finally check some error and submit it easily</li>
+<li>Delete button to delete response if anything goes wrong</li>
+<li>Seller can easily check pending approved and rejected channel by clicking on the links provided by the bot</li>
+<li>Seller can easily see that day's auction items in auction channel link</li></ul>
 
 <li>EASY FOR ADMIN TO HANDLE</li><ul>
-</li>OWNER CAN CUSTOMIZE START BUTTON OF BOT IN HEROKU</li>
-<li>ADMIN CAN EASILY APPROVE OR REJECT ITEMS WITH A SINGLE CLICK</li>
-<li>OWNER CAN ADD ADMINS WHO CAN USE THE ADMIN BUTTONS</li>
-<li>OWNER CAN ALSO ADD USER ID IN ENEMY LIST</li>
-<li>TAG ALL FEATURE ADDED</li></ul><ol>
+</li>Owner can customize start button of bot in heroku</li>
+<li>Admin can easily approve or reject items with a single click</li>
+<li>Owner can add admins who can use the admin buttons</li>
+<li>Owner can also add user id in enemy list</li>
+<li>Tag all feature added</li></ul><ol>
