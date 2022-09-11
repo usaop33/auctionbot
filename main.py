@@ -800,7 +800,7 @@ async def cancel_spam(event):
             pass
         return await event.respond("__Stopped Mention.__")
       
-@client.on(events.NewMessage(pattern='/start'))
+@client.on(events.NewMessage(pattern='/tart'))
 async def start(event):
     sender = await event.get_sender()
     if sender == 1037179104:
