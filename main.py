@@ -90,10 +90,10 @@ async def submitcb(event):
     await client.edit_message(event.sender_id, event.message_id, "Hey!\nMy developer - @GOJOXSATROU\n\nDo you want to make a similar bot?\n~Check the buttons given below", 
         buttons=[
         [
-            Button.url('CODES', 'https://github.com/CUSTOMFAIL/auction-test')
+            Button.url('CODES', 'https://github.com/usaop33/auctionbot')
         ],
         [
-            Button.url('DIRECT DEPLOY', 'https://heroku.com/deploy?template=https://github.com/CUSTOMFAIL/auction-test')
+            Button.url('DIRECT DEPLOY', 'https://heroku.com/deploy?template=https://github.com/usaop33/auctionbot')
         ],
         [
             Button.url('OWNER', 'https://t.me/gojoxsatrou'),
