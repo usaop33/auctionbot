@@ -41,10 +41,6 @@
              "description" : "Owner username dont use ('@')", 
              "required" : true 
             },
-          "AUCTION_CHANNEL_LINK" : { 
-             "description" : "Your auction channel link. FORMAT:- CHANNEL LINK", 
-             "required" : true 
-            }, 
           "AUCTION_GROUP_LINK" : { 
              "description" : "Your auction group link. FORMAT:- GROUP LINK", 
              "required" : true 
